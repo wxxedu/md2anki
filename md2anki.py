@@ -1,4 +1,5 @@
 #! Python3
+# 这是主文件，在这里运行。
 import genanki
 import definitions
 import md2mathjax
