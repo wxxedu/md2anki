@@ -2,6 +2,7 @@
 import genanki
 import definitions
 import md2mathjax
+import bold2cloze
 unconvertedFile = open("unconverted.md")
 
 lines = unconvertedFile.readlines()
@@ -33,5 +34,6 @@ def getTitles(position):
 for index in range(0, len(lines)):
     print(index)
     lines[index] = md2mathjax.mathjax2Anki(lines[index])
+    lines[index] = bold2cloze.bold2Cloze(lines[index], True)
 
 print (lines)
