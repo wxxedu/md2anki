@@ -10,15 +10,21 @@
 
 - [x] 把Obsidian中的加粗转换为Anki中的挖空卡，并建立导向至Obsidian的链接。
 
-### 仍待实现
+- [x] 把转换结果写入txt文件之中。
 
-- [ ] 把转换结果写入txt文件之中。
+- [x] 增加对引用字符`>`和对行内公式`code`的支持。
+
+### 正在实现中
+
+- [ ] 将卡片制作成按照三级标题进行分开，即：一个三级标题一张卡片。
+
+- [ ] 
+
+### 仍待实现
 
 - [ ] 把代码块进行合并，并添加代码高亮。
 
-- [ ] 根据Markdown中的标题给卡片添加metadata。
-
-- [ ] 利用genanki生成Anki卡片，而不是像现在这样的TXT文件。
+- [ ] 利用[genanki](https://github.com/kerrickstaley/genanki/blob/master/LICENSE.txt)生成Anki卡片，而不是像现在这样的TXT文件。
 
 - [ ] 增加更多类型的卡片生成
 
