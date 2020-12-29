@@ -2,7 +2,7 @@
 
 def strip(lines):
 	lines = removeEmptyLines(lines)
-	lines = removeHeadings(lines)
+	lines = removeRight(lines)
 	return lines
 
 
@@ -16,12 +16,10 @@ def removeEmptyLines(lines):
 	return lines
 
 
-def removeHeadings(lines):
+def removeRight(lines):
 	index = 0
-	while index < len(lines):
-		if lines[index][0] == "#":
-			lines.remove(lines[index])
-			index = index - 1
-		index = index  + 1
+	for index in range(0, len(lines)):
+		lines[index] = lines[index].rstrip("\n")
+	print(lines)
 	return lines
 		

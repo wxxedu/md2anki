@@ -10,7 +10,7 @@ def quote2html(line):
 	if line[0] == ">":
 		line = line.lstrip("> ")
 		line = line.rstrip("\n")
-		line = "<div style = \"border-left: 3px solid black; margin: 10px; padding: 10px; font-style: italic;\">" + line + "</div>\n"
+		line = "<div style = \"border-left: 3px solid black; margin: 10px; padding: 10px; font-style: italic;\">" + line + "</div>"
 	return line
 
 def inlineCode2html(line):
