@@ -2,7 +2,7 @@
 import genanki
 import definitions
 import md2mathjax
-import bold2cloze
+import md2cloze
 import apply_headings
 import stripList
 
@@ -17,6 +17,7 @@ lines = stripList.strip(lines)
         
 for index in range(0, len(lines)):
     lines[index] = md2mathjax.mathjax2Anki(lines[index])
-    lines[index] = bold2cloze.bold2Cloze(lines[index], True)
+    lines[index] = md2cloze.md2cloze(lines[index], True)
 
-print (lines)
+for line in lines:
+    print(line)
