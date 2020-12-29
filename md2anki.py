@@ -32,6 +32,6 @@ def getTitles(position):
         
 for index in range(0, len(lines)):
     print(index)
-    lines[index] = md2mathjax.mathjaxAnki(lines[index])
+    lines[index] = md2mathjax.mathjax2Anki(lines[index])
 
 print (lines)
