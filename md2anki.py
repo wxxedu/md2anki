@@ -20,5 +20,9 @@ for index in range(0, len(lines)):
     lines[index] = md2mathjax.mathjax2Anki(lines[index])
     lines[index] = md2cloze.md2cloze(lines[index], True)
 
+convertedFile = open("converted.txt", "w")
 for line in lines:
-    print(line)
+    convertedFile.write(line)
+    
+convertedFile.close()
+
