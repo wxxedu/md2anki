@@ -55,7 +55,7 @@ def largeBracketsSpacer(line):
 # 替换掉文本中的大于号、小于号，因为这个会和Anki中的HTML代码的开始和结尾有冲突。
 
 def greaterOrLessThanExchanger(line):
-	for index in range (0, len(line)):
+	for index in range (1, len(line)): # 这边修改成1，这样Markdown的引用可以被正常渲染。
 		if line[index] == ">":
 			line = definitions.subString(line, index, "¡")
 		if line[index] == "<":

@@ -1,0 +1,4 @@
+Essentially, just value. 
+In comparison to: <a href = "obsidian://open?vault=Knowledge%20Base&file=2%20-%20ZTK%20Knowledge%20Base%2F202012261531%20Vector">{{c1::vectors}}</a>.
+In computer science, refer to <a href = "obsidian://open?vault=Knowledge%20Base&file=2%20-%20ZTK%20Knowledge%20Base%2F202012211349%20Scalar%20-%20Programming">{{c1::scalars in programming}}</a>.
+<div style = "border-left: 3px solid black; margin: 10px; padding: 10px; font-style: italic;">In swift, the <label style = "border: 2px solid gray; margin: 5px; padding: 5px; border-radius: 5px; text-color: #DDDDDD;">print</label> function would print out something very interesting. </div>

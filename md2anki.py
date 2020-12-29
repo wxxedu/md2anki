@@ -4,6 +4,7 @@ import genanki
 import definitions
 import md2mathjax
 import md2cloze
+import md2html
 import apply_headings
 import stripList
 
@@ -18,6 +19,7 @@ lines = stripList.strip(lines)
         
 for index in range(0, len(lines)):
     lines[index] = md2mathjax.mathjax2Anki(lines[index])
+    lines[index] = md2html.md2html(lines[index])
     lines[index] = md2cloze.md2cloze(lines[index], True)
 
 convertedFile = open("converted.txt", "w")
