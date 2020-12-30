@@ -157,12 +157,13 @@ def process_ztk_line(line):
 	line = line.replace("¡", "")
 	segments = line.split("|")
 	url = gen_obsidian_url.generate(segments[0])
-	content = segments[0]
 	if len(segments) == 1:
+		content = segments[0]
 		if ztk_to_cloze:
 			content = "{{c*::" + segments[0] + "}}"
 		completeURL = "<a href = \"" + url + "\">" + content + "</a>"
 	elif len(segments) == 2:
+		content = segments[1]
 		if ztk_to_cloze:
 			content = "{{c*::" + segments[1] + "}}"
 		completeURL = "<a href = \"" + url + "\">" + content + "</a>"
