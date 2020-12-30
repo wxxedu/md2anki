@@ -44,7 +44,7 @@ def subString(string,position,changeTo):
 # 替换掉文本中的大于号、小于号，因为这个会和Anki中的HTML代码的开始和结尾有冲突。
 
 def greaterOrLessThanExchanger(line):
-	for index in range (0, len(line)): # 这边修改成1，这样Markdown的引用可以被正常渲染。
+	for index in range (1, len(line)): # 这边修改成1，这样Markdown的引用可以被正常渲染。
 		if line[index] == ">":
 			line = subString(line, index, "¡")
 		if line[index] == "<":
@@ -57,7 +57,7 @@ def greaterOrLessThanExchanger(line):
 # MathJax中如果出现两个连续“{”或者两个连续的“}”，会和Anki的Cloze卡片发生冲突，所以需要替换掉。
 
 def largeBracketsSpacer(line):
-	for index in range (0, len(line) - 1):
+	for index in range (1, len(line) - 1):
 		if line[index] + line[index + 1] == "{{":
 			line = subString(line, index, "¡")
 		if line[index] + line[index + 1] == "}}":
