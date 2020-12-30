@@ -8,7 +8,7 @@
 
 - [x] 把Markdown中的加粗转换为Anki中的挖空卡。
 
-- [x] 把Obsidian中的加粗转换为Anki中的挖空卡，并建立导向至Obsidian的链接。
+- [x] 把Obsidian中的wiki-link转换为回到Obsidian中的链接（前提：同一文件夹下），并可以选择将其变为Anki中的挖空卡。
 
 - [x] 把转换结果写入txt文件之中。
 
@@ -16,36 +16,24 @@
 
 - [x] 增加对多行代码的支持
 
+- [X] 增加对Obsidian的同一目录下一次性全部读写的功能
+
+- [x] 增加了对于标题样式的支持
+
+- [x] 增加行内代码可以转换为挖空卡的选项
+
+- [x] 增加Markdown格式的图片向HTML格式的转换
+
 ### 正在实现中
 
-- [ ] 增加对Obsidian的同一目录下一次性全部读写的功能
+- [ ] Obsidian中双向链接定位不限制于一个文件夹的设置
 
-- [ ] 将卡片制作成按照三级标题进行分开，即：一个三级标题一张卡片。
+- [ ] 使用教程
 
 ### 仍待实现
 
-- [ ] 把代码块进行合并，并添加代码高亮。
+- [ ] 代码高亮
 
-- [ ] 利用[genanki](https://github.com/kerrickstaley/genanki/blob/master/LICENSE.txt)生成Anki卡片，而不是像现在这样的TXT文件。
-
-- [ ] 增加更多类型的卡片生成
+- [ ] （可能不会制作）利用[genanki](https://github.com/kerrickstaley/genanki/blob/master/LICENSE.txt)生成Anki卡片，而不是像现在这样的TXT文件。
 
 ## 如何使用
-
-### 转换Cloze
-
-把你需要转换的Markdown文件复制粘贴到`unconverted.md`之中，打开`md2anki.py`文件，点击运行，即可导出成相对应的txt文件。通过Anki选择把txt文件导入为Cloze，即可。
-
-### 转换Obsidian链接
-
-**使用此功能，你需要把Obsidian的文件都保存在同一个文件夹之下，同时需要同一个层级。**
-
-复制Obsidian中的链接，并粘贴，比如：
-
-`obsidian://open?vault=Knowledge%20Base&file=2%20-%20ZTK%20Knowledge%20Base%2F202012261536%20Scalar`
-
-在上图中，如下部分是我的文件夹链接：
-
-`obsidian://open?vault=Knowledge%20Base&file=2%20-%20ZTK%20Knowledge%20Base%2F`
-
-把这段内容，复制粘贴到`obsidianURLGenerator.py`中相应的位置，保存，即可。
