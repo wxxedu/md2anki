@@ -1,5 +1,8 @@
 #! Python3
 # 这是主文件，在这里运行。
+import sys
+
+sys.path.append("./Conversions/")
 import genanki
 import definitions
 import md2mathjax
@@ -9,7 +12,7 @@ import apply_headings
 import stripList
 import codeToHtml
 # 打开文件
-unconvertedFile = open("unconverted.md")
+unconvertedFile = open("./Files/unconverted.md")
 lines = unconvertedFile.readlines()
 
 lines = stripList.strip(lines)
@@ -30,7 +33,7 @@ for index in range(0, len(lines)):
     
 print(lines)
 
-convertedFile = open("converted.txt", "w")
+convertedFile = open("./Files/converted.txt", "w")
 for line in lines:
     convertedFile.write(line)
     
