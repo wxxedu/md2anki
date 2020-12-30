@@ -179,6 +179,7 @@ def image_to_html(line):
 				position = index
 				premise = True
 		if premise and position > 0:
+			line = line.rstrip("<br>")
 			name_string = ""
 			url_string = ""
 			for index in range(2, position):
@@ -204,6 +205,7 @@ def headings_to_html(line):
 			else:
 				premise = False
 		if line[count + 1] == " ":
+			line = line.rstrip("<br>")
 			line = line.lstrip("#")
 			line = line.lstrip(" ")
 			line = "<h%d>"%(count + 1) + line + "</h%d>"%(count + 1)
