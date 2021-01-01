@@ -1,6 +1,6 @@
 # md2anki
 
-NOTE: this version is currently abandoned. See the newer version at [Obsidianki]().
+NOTE: this version is currently abandoned. See the newer version at [Obsidianki](https://github.com/wxxedu/obsidianki).
 
 ## 功能
 
