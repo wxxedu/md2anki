@@ -1,5 +1,7 @@
 # md2anki
 
+NOTE: this version is currently abandoned. See the newer version at [Obsidianki]().
+
 ## 功能
 
 ### 已实现
